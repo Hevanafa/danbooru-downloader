@@ -1,0 +1,17 @@
+﻿<Window x:Class="DanbooruDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DanbooruDownloader"
+        mc:Ignorable="d"
+        Title="Danbooru Downloader - by Hevanafa (Aug 2021)" Height="303.099" Width="480.033">
+    <Grid>
+        <TextBox x:Name="txbUri" Height="25" Margin="10,10,180,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txbOutput" Margin="10,65,10,10" TextWrapping="Wrap" TextChanged="TxbOutput_TextChanged" VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="btnDownload" Content="Download" HorizontalAlignment="Right" Height="25" Margin="0,10,95,0" VerticalAlignment="Top" Width="80" Click="BtnDownload_Click"/>
+        <ProgressBar x:Name="prgDownload" Height="20" Margin="10,40,10,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDownloadsFolder" Content="Folder" HorizontalAlignment="Right" Height="25" Margin="0,10,10,0" VerticalAlignment="Top" Width="80" Click="BtnDownloadsFolder_Click"/>
+
+    </Grid>
+</Window>
